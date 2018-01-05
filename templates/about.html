@@ -1,0 +1,43 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="container">
+	<div class="row">
+		<div class="col-xs-2">
+		</div>
+		<div class="col-xs-10 my-about-title">
+			<h1>회사소개</h1>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-2">
+			<ul class="nav nav-pills nav-stacked">
+			    <li class="active"><a data-toggle="pill" href="#welcome"><span class="glyphicon glyphicon-chevron-right"></span>인사말</a></li>
+			    <li><a data-toggle="pill" href="#organization"><span class="glyphicon glyphicon-chevron-right"></span>조직도</a></li>
+			    <li><a data-toggle="pill" href="#history"><span class="glyphicon glyphicon-chevron-right"></span>연혁</a></li>
+			    <li><a data-toggle="pill" href="#certificates"><span class="glyphicon glyphicon-chevron-right"></span>인증현황</a></li>
+			    <li><a data-toggle="pill" href="#performance"><span class="glyphicon glyphicon-chevron-right"></span>공사실적</a></li>
+			</ul>
+		</div>
+
+		<div class="col-xs-10 tab-content my-about-content">
+			<div id="welcome" class="tab-pane fade in active">
+				<img src="{{url_for('static', filename='images/about-welcome.jpg')}}" alt="WELCOME">
+			</div>
+			<div id="organization" class="tab-pane fade">
+				<img src="{{url_for('static', filename='images/about-organization.jpg')}}" alt="ORGANIZATION">
+			</div>
+			<div id="history" class="tab-pane fade">
+				<img src="{{url_for('static', filename='images/about-history.jpg')}}" alt="HISTORY">
+			</div>
+			<div id="certificates" class="tab-pane fade">
+				<img src="{{url_for('static', filename='images/about-certificates.jpg')}}" alt="CERTIFICATES">
+			</div>
+			<div id="performance" class="tab-pane fade">
+				
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %} 

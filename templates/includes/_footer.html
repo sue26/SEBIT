@@ -1,0 +1,72 @@
+<div class="myfooter-detail">		
+	<div class="col-sm-5">
+		<div id="map" style="color: black;">
+			<script>
+	          	function initMap() {
+		            var address = {lat: 37.485305, lng: 126.812735}
+		            var center = {lat: 37.489000, lng: 126.812735}
+		   
+		            var map = new google.maps.Map(document.getElementById('map'), {
+		              zoom: 14,
+		              center: center
+		            });
+		            var infowindow = new google.maps.InfoWindow({
+		              content: '<h4>세빛주식회사</h4><p>경기도 부천시 소사구 경인로 519 역곡프라자 5층</p>'
+		            });
+		            var marker = new google.maps.Marker({
+		              position: address,
+		              map: map,
+		              title: '경기도 부천시 소사구 경인로 519 역곡프라자 5층'
+		            });
+		            marker.addListener('click', function() {
+		              infowindow.open(map, marker);
+		            });
+		            infowindow.open(map, marker);
+	        	}
+	        </script>
+	        <script async defer 
+	        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChjBAFEPC6SPKgQ6bNSWTWan0ZudEcU4E&callback=initMap">
+	        </script>
+		</div>
+	</div>
+	<div class="col-sm-3">
+		<h3 class="myfooter-header">SEBIT Electric Co., Ltd.</h3>
+		<div class="myfooter-content">
+			<h5><b>상호명: </b>세빛주식회사</h5>
+			<p><b>대표자:</b> 조용현</p>
+			<p><b>이메일:</b> sebit4646@naver.com</p>
+		</div>
+	</div>
+	<div class="col-sm-2">
+		<h3 class="myfooter-header">연락처</h3>
+		<div class="myfooter-content">
+			<h5>[본사]</h5>
+			<p><b>TEL:</b> 032-345-4646-8</p>
+			<p><b>FAX:</b> 032-345-4649</p>
+			<p><b>주소:</b> 경기도 부천시 소사구 경인로 519 역곡프라자 5층</p>
+			<h5>[강남지사]</h5>
+			<p><b>TEL:</b> 02-6203-5525</p>
+			<p><b>FAX:</b> 02-6203-5526</p>
+		</div>
+	</div>
+	<div class="col-sm-2">
+		<h3 class="myfooter-header">고객센터</h3>
+		<div class="myfooter-content">
+			<h5>고장접수</h5>
+			080-346-4646
+		</div>
+	</div>
+</div>
+
+<div class="footer-bottom myfooter">
+	<div class="row container">
+		<div id="footer-copyright">
+			&copy; 2017 세빛주식회사 All rights reserved.
+			&nbsp; &nbsp; &nbsp;
+			<a href="/privacy" target="_blank" id="privacyLink"><span class="glyphicon glyphicon-info-sign"></span> 개인정보취급방침</a> 
+		</div>
+		<div id="footer-develop">
+			<span class="glyphicon glyphicon-leaf"></span>SJBAE
+		</div>
+	</div>
+</div>

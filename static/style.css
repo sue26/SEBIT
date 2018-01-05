@@ -1,0 +1,95 @@
+body {
+	padding-top: 13vh;
+}
+
+.my-navbar {
+	background-color: white;
+	height: 13vh;
+	margin: 0;
+}
+
+.my-navbar li {
+	height: 13vh;
+	display: flex;
+  	align-items: center;
+}
+
+#myCarousel {
+	margin: 0;
+}
+
+.carousel-inner .item img {
+	width: 100vw;
+	height: 87vh;
+}
+
+.carousel-caption:first-child {
+	color: black;
+}
+
+.myDescription, .myMap {
+	padding: 50px;
+	background-color: white;
+	width: 100vw;
+}
+
+#map {
+	width: 100%;
+	height: 250px;
+	background-color: grey;
+}
+
+#map2 {
+	width: 90%;
+	height: 600px;
+	background-color: grey;
+}
+
+.nav-stacked li a {
+	text-align: center; !important
+}
+
+.glyphicon-chevron-right {
+	float: right; !important
+}
+
+.my-about-title {
+	padding: 20px;
+	border-bottom: solid;
+	border-color: #b8bcc4;
+}
+
+.my-about-content {
+	padding: 50px;
+}
+
+.myfooter-detail {
+	background-color: #39517a;
+	color: white;
+	padding: 10px;
+	height: 40vh;
+}
+
+.myfooter {
+	background-color: #373d47;
+	color: white;
+	padding: 10px;
+}
+
+.myfooter-content {
+	font-size: 0.8em;
+}
+
+#footer-copyright {
+	display: inline;
+	padding-left: 100px;
+}
+
+#footer-develop {
+	display: inline;
+	float: right;
+}
+
+#privacyLink {
+	color: white;
+}
